@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/update/cities', 'UpdateCitiesController@txtToArray');
-
 Route::get('/autocomplete', 'SearchFormController@index');
 
 Route::get('/autocomplete/search', [
